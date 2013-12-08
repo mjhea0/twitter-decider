@@ -57,6 +57,7 @@ $(function () {
 			}
 		}
 	});
+
 	$("#decision").click(onDecide);
 	$(".example").click(function(e) {
 		var choice1 = $(this).attr("data-choice1");
