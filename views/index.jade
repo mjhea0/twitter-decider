@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .container
+    h1 Need to make a decision?
+    p.lead Use Twitter sentiment analysis.
+      br
+      br
+      .form-container
+          form(action='', method='post')
+            table
+              tr
+                td
+                  input#choice1.choice(type='text', data-choice='1', placeholder='Choice #1...', name='choice1')
+              tr
+                td
+                  input#choice2.choice(type='text', data-choice='2', placeholder='Choice #2...', name='choice2')
+              tr
+                td
+                  input#decision.btn(type='submit', value='Decide!')
+              tr
+                td
+                  button#more.btn.btn-primary
+                    b +
+                    | Add another
+        .decision-container
+          p#status
+          p#decision-text
+          p#score
