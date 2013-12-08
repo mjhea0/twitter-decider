@@ -2,7 +2,7 @@ form {
   margin:0px 0px 0px 0px;
 }
 .container {
-  max-width: 600px;
+  max-width: 900px;
   padding-top: 50px;
 }
 .choice {
@@ -33,4 +33,13 @@ form {
 .decision-container {
   float:left;
   width:50%;
+}
+
+.btn-xl {
+    padding: 18px 28px;
+    font-size: 22px; 
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
 }
