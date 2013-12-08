@@ -17,12 +17,13 @@ block content
                   input#choice2.choice(type='text', data-choice='2', placeholder='Choice #2...', name='choice2')
               tr
                 td
-                  input#decision.btn(type='submit', value='Decide!')
+                  input#decision.btn.btn-success(type='submit', value='Decide!')
               tr
                 td
                   button#more.btn.btn-primary
                     b +
-                    | Add another
+                    &nbsp;
+                    | Add another item
         .decision-container
           p#status
           p#decision-text

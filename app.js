@@ -5,7 +5,7 @@ var express = require('express');
 var routes = require('./routes');
 var config = require('./config');
 var path = require('path');
-var Twit = require('twit');
+var twit = require('twit');
 var sentimental = require('Sentimental')
 
 // global config
@@ -70,7 +70,7 @@ app.post('/query', function(req, res) {
 	var choices = JSON.parse(req.body.choices);
 	var today = new Date();
 	
-	var twitter = new Twit({
+	var twitter = new twit({
 		consumer_key: config.consumer_key,
 		consumer_secret: config.consumer_secret,
 		access_token: config.access_token,
